@@ -1,0 +1,52 @@
+{
+  "name": "nessworthy/amphp-http-httplug",
+  "description": "A small crappy adapter package to support php-http/async-client-implementation via. amphp/http-client.",
+  "version": "dev-master",
+  "authors": [
+    {
+      "name": "Sean Nessworthy",
+      "homepage": "https://nessworthy.me",
+      "role": "Author",
+      "email": "sean@nessworthy.me"
+    }
+  ],
+  "homepage": "https://github.com/Nessworthy/amphp-http-httplug",
+  "license": "MIT",
+  "type": "library",
+  "require": {
+    "amphp/http-client": "^4.5",
+    "php-http/httplug": "^2.2",
+    "amphp/http-client-psr7": "dev-master",
+    "psr/http-factory-implementation": "1.0",
+    "psr/http-message-implementation": "1.0"
+  },
+  "suggest": {
+    "laminas/laminas-diactoros": "^2.5"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8.5",
+    "amphp/phpunit-util": "^1.4",
+    "laminas/laminas-diactoros": "^2.5",
+    "marcocesarato/php-conventional-changelog": "^1.10"
+  },
+  "provide": {
+    "php-http/client-implementation": "1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Nessworthy\\AmpHttpPlug\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Nessworthy\\AmpHttpPlug\\Test\\": "test"
+    }
+  },
+  "scripts": {
+    "changelog": "conventional-changelog",
+    "release": "conventional-changelog --commit",
+    "release:patch": "conventional-changelog --patch --commit",
+    "release:minor": "conventional-changelog --minor --commit",
+    "release:major": "conventional-changelog --major --commit"
+  }
+}
