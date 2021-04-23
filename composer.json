@@ -1,7 +1,7 @@
 {
   "name": "nessworthy/amphp-http-httplug",
   "description": "A small crappy adapter package to support php-http/async-client-implementation via. amphp/http-client.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "authors": [
     {
       "name": "Sean Nessworthy",
